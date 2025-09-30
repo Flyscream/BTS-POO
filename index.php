@@ -1,10 +1,17 @@
 <?php
 
-// inclure la classe Cat
-include "Cat.php";
 
-//instancier de la classe Cat
-$cat1 = new Cat();
-$cat1 -> setname("truc"); 
+include 'animal.php';
+include 'cat.php';
 
-echo "mon premiere chat s'appelle :" . $cat1 -> getname();
+$myCat = new Cat("truc");
+$myCat->setName("truc");
+$myCat -> setAge(3); 
+$myCat -> setColor("noir"); 
+
+echo "Le nom du chat est : " . $myCat->getName();
+echo "\n";
+echo "L'age du chat est : " . $myCat->getAge();
+echo "\n";
+echo "La couleur du chat est : " . $myCat->getColor();
+echo "\n";

@@ -1,15 +1,9 @@
 <?php
-class Cat {
-    private string $name;
-    private int $age;
-    private string $color;
 
-    public function setname(string $name): void {
-        $this ->name = $name;
+class Cat extends Animal {
+    
+    public function __construct(string $name) {
+        parent::__construct($name);
     }
 
-    // Getter for name
-    public function getname(): string {
-        return $this->name;
-    }
 }
