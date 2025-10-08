@@ -1,8 +1,15 @@
 <?php
 
 
-include 'animal.php';
-include 'cat.php';
+require __DIR__ . '/vendor/autoload.php';
+
+use poo\spa\Cat;
+use poo\spa\Dog;
+
+
+include 'Animal.php';
+include 'Cat.php';
+include 'Dog.php';
 
 $myCat = new Cat("truc");
 $myCat->setName("truc");
